@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Royal Grand Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: Arial;
+        }
+
+
+
+        .container {
+            width: 80%;
+            margin: 100px auto;
+        }
+        .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInUp 0.6s ease;
+}
+
+/* IMPORTANT: Add this */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        p {
+            line-height: 1.8;
+            color: #444;
+        }
+        .card-img {
+            height: 300px;
+            border-radius: 10px;
+            background-image: url('img/about.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="logo">🍴 Royal Grand </div>  
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="dining.html">MENU</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="terms.html">TERMS & CONDITIONS</a></li>
+            </ul>  
+            <a href="rooms.html" class="btn">BOOK A ROOM</a>
+          </nav>
+    </div>
+
+    <div class="container">
+
+        <h1 class="section-title">About Royal Grand Hotel</h1>
+
+        <!-- Our Story Section -->
+        <div class="grid grid-2" style="margin-top: 3rem;">
+            <div>
+                <h2 style="color:#003366; margin-bottom:1rem;">Our Story</h2>
+
+                <p>
+                    Established in 1985, Royal Grand Hotel has been a beacon of luxury and 
+                    hospitality for over three decades. Our journey began with a simple vision: 
+                    to create a home away from home for travelers seeking comfort, elegance, 
+                    and exceptional service.
+                </p>
+
+                <p>
+                    Today, we stand as one of the most prestigious hotels in the region, known 
+                    for our commitment to excellence, attention to detail, and warm hospitality 
+                    that makes every guest feel like royalty.
+                </p>
+            </div>
+
+            <div class="card-img"><img src="hotel_about.png" height="300" width="600"></div>
+        </div>
+
+        <!-- History Section -->
+        <h2 class="section-title" style="margin-top:4rem;">History & Heritage</h2>
+
+        <div class="card" style="margin-top: 2rem;">
+            <p>
+                Our magnificent building is a perfect blend of traditional architecture and 
+                modern amenities. The heritage structure was carefully restored to preserve 
+                its historical significance while incorporating contemporary luxury standards.
+            </p>
+
+            <p>
+                Over the years, we have hosted dignitaries, celebrities, and countless families, 
+                each leaving with cherished memories and stories to tell. Our walls echo with 
+                decades of laughter, celebrations, and joyous moments.
+            </p>
+        </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+  
+      <h2>Royal Grand</h2>
+      <p class="tagline">
+        Experience comfort, luxury, and delicious dining all in one place.
+      </p>
+  
+      <div class="footer-info">
+        <p>📍 Hyderabad, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉ hotelroyalgrand@email.com</p>
+      </div>
+  
+      <p class="copyright">
+        © 2026 Royal Grand Hotel. All Rights Reserved.
+      </p>
+  
+    </div>
+  </footer>
+</body>
+</html>

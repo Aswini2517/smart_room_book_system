@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>project</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+    body{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background:#f4f4f4;
+        text-align:center;
+    }
+    
+    .category{
+        margin-top:70px;
+    }
+    .menu-container{
+        display:flex;
+        justify-content:center;
+        gap:150px;
+        margin-top:30px;
+    }
+    .card{
+        width:320px;
+        background:white;
+        padding:15px;
+        border-radius:10px;
+        box-shadow:0 0 8px gray;
+    }
+    .card img{
+        width:100%;
+        height:200px;
+        border-radius:7px;
+    }
+    h2{
+        font-size:30px;
+        color:goldenrod;
+    }
+    h3{
+        font-size:20px;
+    }
+    .price{
+        color:goldenrod;
+        font-weight:bold;
+        font-size:x-large;
+    }
+    button{
+        background:rgb(179, 134, 21);
+        color:white;
+        padding:10px 35px;
+        cursor:pointer;
+        border-radius:10px;
+        margin-top:5px;
+        border:none;
+    }
+    button:hover{
+        background:rgb(143, 104, 4);
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Royal Grand</div>  
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="dining.html">MENU</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+        </ul>  
+        <a href="rooms.html" class="btn">BOOK A ROOM</a>
+      </nav>
+
+<div class="category">
+    <h1 style="font-size:50px;color:goldenrod">Dining Menu</h1>
+</div>
+
+<!--veg-->
+<div class="category">
+    <h2>Vegetarian</h2>
+    <div class="menu-container">
+
+        <div class="card">
+            <img class="card img" src="menu_items/vegbiryani.jpeg">
+            <h3>Veg Biryani</h3>
+            <p>Aromatic rice with vegetables</p>
+            <p class="price">299</p>
+            <button onclick="orderFood('Veg Biryani')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/dalmakhani.jpeg">
+            <h3>Dal Makhani</h3>
+            <p>creamly black lentils</p>
+            <p class="price">249</p>
+            <button onclick="orderFood('Dal Makhani')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/paneer tikka masala.jpeg">
+            <h3>Paneer Tikka Masala</h3>
+            <p>cottage cheese in rich tomato gravy</p>
+            <p class="price">349</p>
+            <button onclick="orderFood('Paneer Tikka Masala')">order</button>
+        </div>
+
+    </div>
+</div>
+
+<!--Non-veg-->
+<div class="category">
+    <h2>Non-Vegetarian</h2>
+    <div class="menu-container">
+
+        <div class="card">
+            <img clas="card img" src="menu_items/butter chicken.jpeg">
+            <h3>Butter Chicken</h3>
+            <p>Tender chicken in buttery tomato gravy</p>
+            <p class="price">299</p>
+            <button onclick="orderFood('Butter Chicken')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/fish curry.jpeg">
+            <h3>Fish Curry</h3>
+            <p>Fresh fish in coastal spices</p>
+            <p class="price">249</p>
+            <button onclick="orderFood('Fish Curry')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/chickenbiryani.jpeg">
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant rice with succulent chicken</p>
+            <p class="price">399</p>
+            <button onclick="orderFood('Chicken Biryani')">order</button>
+        </div>
+
+    </div>
+</div>
+
+<!--beverages-->
+<div class="category">
+    <h2>Beverages</h2>
+    <div class="menu-container">
+
+        <div class="card">
+            <img clas="card img" src="menu_items/lime soda.jpeg">
+            <h3>Lime Soda</h3>
+            <p>Refreshing citrus drink</p>
+            <p class="price">99</p>
+            <button onclick="orderFood('Lime Soda')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/mango lassi.jpeg">
+            <h3>Mango Lassi</h3>
+            <p>Creamy yogurt mango</p>
+            <p class="price">129</p>
+            <button onclick="orderFood('Mango Lassi')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/masala chai.jpeg">
+            <h3>Masala Chai</h3>
+            <p>Indian spiced tea</p>
+            <p class="price">79</p>
+            <button onclick="orderFood('Masala Chai')">order</button>
+        </div>
+
+    </div>
+</div>
+
+<!--soups-->
+<div class="category">
+    <h2>Soups</h2>
+    <div class="menu-container">
+
+        <div class="card">
+            <img clas="card img" src="menu_items/tomato soup.jpeg">
+            <h3>Tomato Soup</h3>
+            <p>Classic cream of tomato</p>
+            <p class="price">119</p>
+            <button onclick="orderFood('Tomato Soup')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/sweet corn soup.jpeg">
+            <h3>Sweet Corn Soup</h3>
+            <p>Creamy Corn Soup</p>
+            <p class="price">129</p>
+            <button onclick="orderFood('Sweet Corn Soup')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/hot sour soup.jpeg">
+            <h3>Hot & Sour Soup</h3>
+            <p>Fragrant rice with succulent chicken</p>
+            <p class="price">139</p>
+            <button onclick="orderFood('Hot & Sour Soup')">order</button>
+        </div>
+
+    </div>
+</div>
+
+<!--fast food-->
+<div class="category">
+    <h2>Fast Food</h2>
+    <div class="menu-container">
+
+        <div class="card">
+            <img clas="card img" src="menu_items/veg burger.jpeg">
+            <h3>Veg Burger</h3>
+            <p>Crispy veggie patty burger</p>
+            <p class="price">149</p>
+            <button onclick="orderFood('Veg Burger')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/chicken burger.jpeg">
+            <h3>Chicken Burger</h3>
+            <p>Grilled chicken burger</p>
+            <p class="price">199</p>
+            <button onclick="orderFood('Chicken Burger')">order</button>
+        </div>
+
+        <div class="card">
+            <img clas="card img" src="menu_items/french fries.jpeg">
+            <h3>French Fries</h3>
+            <p>Crispy golden fries</p>
+            <p class="price">139</p>
+            <button onclick="orderFood('French Fries')">order</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function orderFood(item){
+        prompt("How many "+item+" you need")
+        alert(item+" Ordered Successfully.It will be delivered to your room soon")
+    }
+</script>
+<footer class="footer">
+    <div class="footer-content">
+  
+      <h2>Royal Grand</h2>
+      <p class="tagline">
+        Experience comfort, luxury, and delicious dining all in one place.
+      </p>
+  
+      <div class="footer-info">
+        <p> Hyderabad, India</p>
+        <p> +91 98765 43210</p>
+        <p> hotelroyalgrand@email.com</p>
+      </div>
+  
+      <p class="copyright">
+        2026 Royal Grand hotel. All Rights Reserved.
+      </p>
+  
+    </div>
+  </footer>
+</body>
+</html>
